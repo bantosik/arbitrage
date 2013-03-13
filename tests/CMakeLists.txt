@@ -6,8 +6,8 @@ link_directories(${ArbitrageFinder_BINARY_DIR}/src)
 add_executable(unit_tests tests.cpp)
 
 target_link_libraries(unit_tests
-	Boost_FILESYSTEM_LIBRARY
-	Boost_SYSTEM_LIBRARY
-	Boost_UNIT_TEST_FRAMEWORK_LIBRARY
+	${Boost_FILESYSTEM_LIBRARY}
+	${Boost_SYSTEM_LIBRARY}
+	${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
 	ArbitrageLib
 	)
